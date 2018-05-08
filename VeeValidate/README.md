@@ -10,6 +10,3 @@
 ###### 代码地址https://github.com/HongqingCao/My-Code/tree/master/VeeValidate
 
 ###### ![实例效果](https://github.com/HongqingCao/My-Code/blob/master/VeeValidate/VeeValidate.gif)
-
-###### 1、基本使用
-#######

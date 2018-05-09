@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <scr
+  </head>
+  <body class="container">
+  	<ul class="nav nav-pills">
+  		<% if(logined){%>
+  		<li role="presentation"><a href="javascript:;" data-toggle="modal" data-target="#myModal" class="btn btn-info" role="button">添加</a></li>
+  		<li role="presentation"><a href="/logout">退出</a></li>
+  		<%}else{%>
+  		<li role="presentation"><a href="javascript:;" data-toggle="modal" data-target="#loginDialog">登录</a></li>
+  	<%}%>
+  	</ul>
+  	<!-- 创建表单 -->
+  	 <form action="/add" method="post">
+		  	<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        	<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+				          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+					  		 <div class="form-group">
+								    <label for="exampleInputEmail1">名字</label>
+								    <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="name">
+								  </div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				        <input type="submit" class="btn btn-primary" value="添加"></input>
+				      </div>
+				    </div><!-- /.modal-content -->
+				  </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+			</form>
+			<!-- 更改表单-->
+			 <form action="/update" method="post">
+		  	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        	<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+				          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+					  		 <div class="form-group">
+								    <label for="exampleInputEmail1">名字</label>
+								    <input type="hidden" name="index" id="updateIndex"/>
+								    <input type="text" name="name" class="form-control" id="updateName" placeholder="name">
+								  </div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				        <input type="submit" class="btn btn-primary" value="更改"></input>
+				      </div>
+				    </div><!-- /.modal-content -->
+				  </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+			</form>
+			<!-- 登录表单-->
+			 <form action="/login" method="post" id="loginDialogForm">
+		  	<div class="modal fade" id="loginDialog" tabindex="-1" role="dialog">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        	<h4 class="modal-title" id="myModalLabel">登录框</h4>
+				          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+					  		 <div class="form-group">
+								    <label for="loginName">登录名：</label>
+								    <input type="text" name="loinName" class="form-control" id="loginName" placeholder="loginName">
+								  </div>
+								  <div class="form-group">
+								    <label for="password">密码：</label>
+								    <input type="text" name="passWord" class="form-control" id="passWord" placeholder="passWord">
+								  </div>
+								  <div class="form-group">
+								    <label for="password"><img src="/refresh"></label>
+								    <input type="text" name="vnum" class="form-control" placeholder="图片验证码">
+								  </div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				        <input type="submit" class="btn btn-primary" value="登录"></input>
+				      </div>
+				    </div><!-- /.modal-content -->
+				  </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+			</form>
+		<ul class="list-group">
+			<% list.forEach(function(article,index){
+				%><li class="list-group-item"><%= article.name %><a href="/del?index=<%=index%>" class="btn btn-default" >删除</a><a href="#" onclick="edit(<%=index%>)" class="btn btn-default" data-toggle="modal" data-target="#myModal2">更改</a></li><%
+			})%>
+		</ul>
+		<script>
+			function edit(index){
+				//alert(index)
+			 $.get('/get/'+index,function(result){
+			 	 $('#updateIndex')[0].value = index;
+			   $('#updateName')[0].value = result.name;
+			 })
+			};
+		$('#loginDialogForm')[0].onsubmit = function(event){
+				event.preventDefault();
+				$.post('/login',{loginName:$('#loginName')[0].value,passWord:$('#passWord')[0].value},function(result){
+					 if(result ==='success'){  
+					 	   window.location.reload();
+					 }else{
+					 	   alert('登录失败！')
+					 }
+				});
+				return false;
+			}
+		</script>
+  </body>
+</html>

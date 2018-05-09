@@ -11,6 +11,11 @@
 * 3、自定义提示语言
 * 4、统一提交按钮处理
 
-###### 代码地址https://github.com/HongqingCao/My-Code/tree/master/VeeValidate
+###### [代码地址](https://github.com/HongqingCao/My-Code/tree/master/VeeValidate)
 
-###### ![实例效果](https://github.com/HongqingCao/My-Code/blob/master/VeeValidate/VeeValidate.gif)
+#### 2、nodeJs+express4
+
+一个简单带有登陆功能、增删改列表功能的小后台（虽为前端，这个项目没做样式美化，基础bootstrap样式引用），全面应用nodeJs+express4框架技术点
+
+###### [代码地址](https://github.com/HongqingCao/My-Code/tree/master/Node-Express4)
+

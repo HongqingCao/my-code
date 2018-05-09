@@ -1,5 +1,5 @@
 # My-Code
-## 这里记录了我的一些日常代码库，一些编程小技巧，包含vue/react/js全家桶
+## 这里记录了我的一些日常代码库，一些编程小技巧，包含Vue/React/Node/Js技术栈的代码
 
 #### 1、VeeValidate
 

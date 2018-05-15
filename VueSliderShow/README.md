@@ -1,11 +1,11 @@
 # vueslidershow
 
 > a slider implement by vuejs
-
+>一个vue的响应式自适应轮播图组件
 
 [Demo](https://github.com/HongqingCao/My-Code/tree/master/VueSliderShow)
 
-
+###### ![实例效果](https://github.com/HongqingCao/My-Code/blob/master/VueSliderShow/VueSlider.gif)
 
 ## Install
 ``` bash
@@ -13,9 +13,9 @@ npm i vueslideshow
 ```
 
 
-## Usage
+## 应用案例
 
-#### Use in vue2.x:
+#### in vue2.x:
 
 ```html
 <template>
@@ -46,6 +46,13 @@ export default {
 ```
 <br>
 
+### 参数说明：
+
+ 1.invTime,控制轮播速度
+ 
+ 2.slides,具体的轮播数据数组形式，包含图片，文字，链接三个参数
+ 
+ 3.由于是响应式自适应所以推的图片必须高度一致，更友好
 
 ## License
 

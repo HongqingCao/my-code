@@ -3,7 +3,7 @@
 > a slider implement by vuejs
 >一个vue的响应式自适应轮播图组件
 
-[Demo](https://github.com/HongqingCao/My-Code/tree/master/VueSliderShow)
+[示例源码地址](https://github.com/HongqingCao/My-Code/tree/master/VueSliderShow)
 
 ###### ![实例效果](https://github.com/HongqingCao/My-Code/blob/master/VueSliderShow/VueSlider.gif)
 
@@ -25,7 +25,7 @@ npm i vueslideshow
 </template>
 
 <script>
-import sliderShow from './sliderShow'
+import sliderShow from 'vueslidershow'
 export default {
   components: {
       sliderShow

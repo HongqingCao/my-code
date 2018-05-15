@@ -2,20 +2,52 @@
 
 > a slider implement by vuejs
 
-## Build Setup
 
+[Demo](https://github.com/HongqingCao/My-Code/tree/master/VueSliderShow)
+
+
+
+## Install
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+npm i vueslideshow
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Usage
+
+#### Use in vue2.x:
+
+```html
+<template>
+   <div>
+     <slider-show :slides="slides" :inv="invTime"></slider-show>
+   </div>
+</template>
+
+<script>
+import sliderShow from './sliderShow'
+export default {
+  components: {
+      sliderShow
+  },
+  data () {
+    return {
+      invTime: 2000,
+      slides: [
+        {
+          src: require('../assets/1.jpg'),
+          title: '测试测试测试1',
+          href: 'detail/analysis'
+       }
+    ]
+   }
+ }
+}
+```
+<br>
+
+
+## License
+
+[MIT](LICENSE)
+

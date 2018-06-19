@@ -16,4 +16,4 @@ VeeValidate是Vue.js的验证库，它有很多验证规则，并支持自定义
 #### 3、vueslidershow
 一个vue的响应式自适应轮播图组件
 
-######[示例源码地址](https://github.com/HongqingCao/My-Code/tree/master/VueSliderShow)
+###### [示例源码地址](https://github.com/HongqingCao/My-Code/tree/master/VueSliderShow)

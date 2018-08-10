@@ -1,0 +1,142 @@
+* {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+}
+html {
+    min-height: 100%;
+}
+body {
+    background: #E1E1E1;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.healthy-snacks {
+    margin: 2em auto;
+    width: 90%;
+    max-width: 680px;
+    background: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.healthy-snacks .featured-image {
+    position: relative;
+    overflow: hidden;
+}
+.healthy-snacks .featured-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.healthy-snacks .featured-image .arrow {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    background-color: #fff;
+}
+.healthy-snacks .featured-image .arrow:before,
+.healthy-snacks .featured-image .arrow:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    width: 80%;
+    height: 20px;
+    background-color: inherit;
+}
+.healthy-snacks .featured-image .arrow:before {
+    right: 80%;
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-transform: skewX(45deg);
+    -moz-transform: skewX(45deg);
+    -ms-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
+    transform: skewX(45deg);
+}
+.healthy-snacks .featured-image .arrow:after {
+    left: 20%;
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: skewX(-45deg);
+    -moz-transform: skewX(-45deg);
+    -ms-transform: skewX(-45deg);
+    -o-transform: skewX(-45deg);
+    transform: skewX(-45deg);
+}
+.healthy-snacks article {
+    padding: 1em 1em 2em;
+}
+.healthy-snacks article:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.healthy-snacks article header {
+    border-bottom: 2px solid #9bb068;
+}
+.healthy-snacks article header h3 {
+    margin: 0 0 0.25em;
+    font-family: 'McLaren', cursive;
+    font-size: 1.5em;
+    color: #767d2e;
+    text-align: center;
+    text-transform: uppercase;
+}
+.healthy-snacks article .excerpt {
+    font-family: 'Open Sans', sans-serif;
+}
+.healthy-snacks article .excerpt p {
+    line-height: 24px;
+}
+.healthy-snacks article .excerpt a {
+    display: block;
+    margin-top: 1em;
+    color: #c00413;
+    text-decoration: none;
+}
+.healthy-snacks article .excerpt a:hover {
+    color: #fb2f40;
+}
+.healthy-snacks article .excerpt a span:first-child {
+    padding-right: 1em;
+    vertical-align: middle;
+}
+@media only screen and (min-width: 680px) {
+    .healthy-snacks article header {
+        width: 40%;
+        float: left;
+        border-bottom: none;
+        border-right: 2px solid #9bb068;
+    }
+    .healthy-snacks article header h3 {
+        margin: 1em 0;
+        font-size: 2em;
+    }
+    .healthy-snacks article header h3 span {
+        display: block;
+    }
+    .healthy-snacks article .excerpt {
+        width: 60%;
+        float: left;
+        padding-left: 2em;
+    }
+}

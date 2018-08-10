@@ -1,0 +1,41 @@
+body {
+    font-family: Montserrat;
+    margin: 0;
+    background: #eee;
+}
+p {
+    font-family: monospace;
+}
+.content {
+    width: 400px;
+    padding: 6rem 4rem 2rem 2rem;
+    background: #fff;
+    margin: 0.5rem;
+}
+.pre-headline {
+    color: #777;
+    letter-spacing: 0.1rem;
+    font-family: monospace;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+h1 {
+    position: relative;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: -0.05rem;
+    line-height: 1;
+    text-transform: uppercase;
+    z-index: 10;
+}
+h1:before {
+    content: "2018/08";
+    font-family: monospace;
+    font-size: 10rem;
+    position: absolute;
+    top: 2rem;
+    left: -2rem;
+    z-index: 0;
+    line-height: 1;
+    color: rgba(50, 25, 0, 0.1);
+}

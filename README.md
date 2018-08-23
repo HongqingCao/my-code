@@ -16,6 +16,10 @@ ps:每个文件夹对应一个项目技巧 ，下面列表可以点击标题进�
 ## Node  
 *  [1、nodeJs+express4（全面入门应用nodeJs+express4框架技术点，写有登陆功能、增删改列表功能的小后台）](https://github.com/HongqingCao/My-Code/tree/master/Node-Express4)   
 
+## 小程序  
+* [1、geekbook( 基于mpVue框架构建的极客图书馆小程序 )](https://github.com/HongqingCao/My-Code/tree/master/geekbook)  
+ 
+  
 ## 其他  
 
 *  [1、docsify（无需构建快速生成文档网站，防Vue官网）](https://github.com/HongqingCao/My-Code/tree/master/Node-Express4)   

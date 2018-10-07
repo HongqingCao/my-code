@@ -12,6 +12,8 @@ ps:每个文件夹对应一个项目技巧 ，下面列表可以点击标题进�
 * [1、VeeValidate (VeeValidate是Vue.js的验证库，实例应用体验)](https://github.com/HongqingCao/My-Code/tree/master/VeeValidate)  
    
 * [2、vueslidershow( 自己封装一个vue的响应式自适应轮播图组件 )](https://github.com/HongqingCao/My-Code/tree/master/VueSliderShow)  
+
+* [2、阿里达摩院头部导航](https://github.com/HongqingCao/My-Code/tree/master/damopotal)  
  
   
 ## React  

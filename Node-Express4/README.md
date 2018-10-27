@@ -13,4 +13,4 @@
 
 废话不多说，先看效果gif
 
-###### ![实例效果](https://github.com/HongqingCao/My-Code/blob/master/Node-Express4/node-express.gif)
+###### ![实例效果](https://github.com/HongqingCao/MyCode/blob/master/Node-Express4/node-express.gif)

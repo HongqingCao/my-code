@@ -15,7 +15,7 @@
 
 ###### 查看：只需下载，然后打开index.html，查看列表
 
-###### [代码地址](https://github.com/HongqingCao/My-Code/tree/master/Pseudo-classes)
+###### [代码地址](https://github.com/HongqingCao/MyCode/tree/master/Pseudo-classes)
 
 ###### [掘金文章地址](https://juejin.im/post/5b6d0c5cf265da0f504a837f)
 

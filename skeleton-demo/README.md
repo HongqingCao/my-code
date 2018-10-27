@@ -5,6 +5,6 @@
 ### 运行方式
 下载代码，直接用浏览器打开index.html即可浏览效果
 
-###### 本demo代码地址： https://github.com/HongqingCao/My-Code/tree/master/skeleton-demo
+###### 本demo代码地址： https://github.com/HongqingCao/MyCode/tree/master/skeleton-demo
 
-###### ![实例效果](https://github.com/HongqingCao/My-Code/blob/master/skeleton-demo/skeleton.gif)
+###### ![实例效果](https://github.com/HongqingCao/MyCode/blob/master/skeleton-demo/skeleton.gif)

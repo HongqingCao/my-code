@@ -3,9 +3,9 @@
 > a slider implement by vuejs
 >一个vue的响应式自适应轮播图组件
 
-[示例源码地址](https://github.com/HongqingCao/My-Code/tree/master/VueSliderShow)
+[示例源码地址](https://github.com/HongqingCao/MyCode/tree/master/VueSliderShow)
 
-###### ![实例效果](https://github.com/HongqingCao/My-Code/blob/master/VueSliderShow/VueSlider.gif)
+###### ![实例效果](https://github.com/HongqingCao/MyCode/blob/master/VueSliderShow/VueSlider.gif)
 
 ## Install
 ``` bash

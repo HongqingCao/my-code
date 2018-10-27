@@ -9,6 +9,6 @@ VeeValidate是Vue.js的验证库，它有很多验证规则，并支持自定义
 * 4、验证HTML5输入和自定义Vue组件
 * 5、统一提交按钮处理
 
-###### 代码地址https://github.com/HongqingCao/My-Code/tree/master/VeeValidate
+###### 代码地址https://github.com/HongqingCao/MyCode/tree/master/VeeValidate
 
-###### ![实例效果](https://github.com/HongqingCao/My-Code/blob/master/VeeValidate/VeeValidate.gif)
+###### ![实例效果](https://github.com/HongqingCao/MyCode/blob/master/VeeValidate/VeeValidate.gif)

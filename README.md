@@ -14,7 +14,7 @@ ps:每个文件夹对应一个项目技巧 ，下面列表可以点击标题进�
 
 ## 最新动态  
 
-- [2018-10-25] [《使用CSS自定义属性构建骨架屏》](https://github.com/HongqingCao/MyCode/tree/master/skeleton-demo)  
+- [2018-12-23] [《CSS变量在前端复杂布局和交互上的探索》](https://github.com/HongqingCao/MyCode/tree/master/dry-switching-with-css)   
 
 
 
@@ -23,6 +23,7 @@ ps:每个文件夹对应一个项目技巧 ，下面列表可以点击标题进�
 - :book: [1、各厂云服务官网体验，分析并含技巧实现代码，未完待续)]()  
 - :book: [2、从青铜到王者10个css3伪类使用技巧和运用](https://github.com/HongqingCao/MyCode/tree/master/Pseudo-classes)  
 - :book: [3、使用CSS自定义属性构建骨架屏](https://github.com/HongqingCao/MyCode/tree/master/skeleton-demo)  
+- :book: [4、CSS变量在前端复杂布局和交互上的探索](https://github.com/HongqingCao/MyCode/tree/master/dry-switching-with-css)  
 
 ## Vue  
 

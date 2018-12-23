@@ -11,6 +11,6 @@
 
 
 
-###### 检索demo代码地址： https://github.com/HongqingCao/MyCode/tree/master/dry-switching-with-css/infographic-demo
+###### 响应信息图demo代码地址： https://github.com/HongqingCao/MyCode/tree/master/dry-switching-with-css/infographic-demo
 
 ###### ![实例效果](https://github.com/HongqingCao/MyCode/blob/master/dry-switching-with-css/info.gif)

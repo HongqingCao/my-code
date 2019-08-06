@@ -45,6 +45,9 @@ ps:每个文件夹对应一个项目技巧 ，下面列表可以点击标题进�
 
 ## 小程序  
 - :book: [1、geekbook( 基于mpVue框架构建的极客图书馆小程序 )](https://github.com/HongqingCao/MyCode/tree/master/geekbook)  
+
+ ## 微信公众号H5  
+- :book: [1、微信H5页面前端开发，大多数人都会遇到的几个兼容性坑](https://juejin.im/post/5d47d2eff265da03f77e4e3a)  
  
   
 ## 其他  

@@ -1,0 +1,138 @@
+/* USELESS CSS */
+
+.content {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 2rem 0;
+    width: 100vw;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    margin: 0 .5em;
+}
+/* COLORS */
+/* BUTTONS */
+
+.btn {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #cdd2d6;
+    box-sizing: border-box;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 45px;
+    letter-spacing: 2px;
+    padding: .8em 1em;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.btn:hover {
+    background-color: #05a8ff;
+    border-color: #05a8ff;
+    color: #ffffff;
+}
+/* TOOLTIP */
+
+.tooltip {
+    position: relative;
+    overflow: hidden;
+}
+.tooltip:hover {
+    overflow: visible;
+}
+.tooltip:hover .tooltip-content {
+    opacity: 1;
+}
+.tooltip .tooltip-content {
+    background: #05a8ff;
+    box-shadow: 0 5px 25px 5px rgba(205, 210, 214, 0.8);
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    max-width: 200px;
+    min-width: 145px;
+    padding: 1em;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.tooltip .tooltip-content::after {
+    background: #05a8ff;
+    content: "";
+    height: 10px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 10px;
+}
+.tooltip.top .tooltip-content {
+    bottom: calc(100% + 1.5em);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.tooltip.top .tooltip-content::after {
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+}
+.tooltip.bottom .tooltip-content {
+    bottom: calc(-100% - 1.8em);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.tooltip.bottom .tooltip-content::after {
+    top: -5px;
+}
+.tooltip.right .tooltip-content {
+    left: calc(100% + 1.5em);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.tooltip.right .tooltip-content::after {
+    left: -5px;
+    margin-top: -5px;
+    top: 50%;
+}
+.tooltip.left .tooltip-content {
+    right: calc(100% + 1.5em);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.tooltip.left .tooltip-content::after {
+    right: -5px;
+    margin-top: -5px;
+    top: 50%;
+}

@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+    background: #2D2D34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.box {
+    position: relative;
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    color: #F27059;
+}
+.item {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease;
+}
+.one:before,
+.one:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #F27059;
+    transition: 0.4s all ease;
+}
+.one:before {
+    top: 0;
+}
+.one:after {
+    bottom: 0;
+}
+.one .item:before,
+.one .item:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    height: 100%;
+    width: 2px;
+    background: #F27059;
+    transition: 0.4s all ease;
+    z-index: -1;
+}
+.one .item:before {
+    left: 0;
+}
+.one .item:after {
+    right: 0;
+}
+.one:hover:before,
+.one:hover:after {
+    transition: 0.4s all ease;
+}
+.one:hover:before {
+    transform: translateY(-10px);
+}
+.one:hover:after {
+    transform: translateY(10px);
+}
+.one:hover .item {
+    color: white;
+}
+.one:hover .item:before,
+.one:hover .item:after {
+    width: 100%;
+    transition: 0.4s all ease;
+}
+.two {
+    box-sizing: border-box;
+    border: 2px solid #F27059;
+    position: relative;
+}
+.two:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 50px;
+    transition: 0.4s all ease;
+    background: #F27059;
+    left: 0;
+    z-index: -1;
+}
+.two:hover {
+    color: white;
+}
+.two:hover:before {
+    width: 100%;
+    transition: 0.4s all ease;
+}

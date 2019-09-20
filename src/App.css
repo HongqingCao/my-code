@@ -1,0 +1,59 @@
+body {
+    background-color: #1e2931;
+    color: #fff;
+    font-family: sans-serif;
+    font-style: 16px;
+    font-style: 1rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 90%;
+}
+figure {
+    margin: 0;
+}
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+input {
+    border: 0;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+.search {
+    font-size: 24px;
+    font-size: 1.5rem;
+    margin: 1.5em auto 3em;
+    max-width: 80%;
+}
+.search [type='search'] {
+    background-color: #131b20;
+    color: #fff;
+    padding: 0.5em 2em;
+    text-align: center;
+    width: 100%;
+}
+.movies {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1em;
+    -ms-grid-columns: (minmax(10em, 1fr))[auto-fill];
+    grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.movies > li {
+    box-shadow: 0 0 1em rgba(0, 0, 0, .3);
+}
+.movie figcaption {
+    padding: 1em;
+}
+.movie__title {
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0;
+}

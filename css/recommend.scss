@@ -1,0 +1,122 @@
+﻿.enroll {
+    width: 100%;
+    background-color: #fff;
+    margin: 20px auto 0 auto;
+    padding: 15px;
+    padding-bottom: 80px;
+
+    .title {
+        color: #3a6ca3;
+        font-size: 24px;
+        padding-bottom: 7px;
+        border-bottom: 2px solid #b7cee0;
+    }
+
+    .content {
+        width: 100%;
+        padding: 15px;
+
+        .info {
+            height: 55px;
+            margin-bottom: 3px;
+
+            .a {
+                display: inline-block;
+                width: 80px;
+                text-align: right;
+                font-size: 14px;
+                color: #666666;
+                float: left;
+                line-height: 35px;
+            }
+
+            input {
+                float: left;
+                width: calc(100% - 80px);
+                height: 35px;
+                border-radius: 5px;
+                border: 1px solid #dbdbdb;
+                background-color: #f0f0f0;
+                padding-left: 17px;
+                padding-right: 17px;
+            }
+
+            .group-input {
+                height: 40px;
+
+                .a {
+                    display: inline-block;
+                    width: 80px;
+                    text-align: right;
+                    font-size: 14px;
+                    color: #666666;
+                    float: left;
+                    line-height: 35px;
+                }
+
+                input {
+                    float: left;
+                    width: calc(100% - 80px);
+                    height: 35px;
+                    border-radius: 5px;
+                    border: 1px solid #dbdbdb;
+                    background-color: #f0f0f0;
+                    padding-left: 17px;
+                    padding-right: 17px;
+                }
+
+                textarea {
+                    width: calc(100% - 80px);
+                    height: 90px;
+                    border-radius: 5px;
+                    border: 1px solid #dbdbdb;
+                    background-color: #f0f0f0;
+                    padding: 10px 17px;
+                    resize: none;
+                    font-family: "\5FAE\8F6F\96C5\9ED1";
+                }
+            }
+
+            .errors {
+                height: 12px;
+                margin: 0;
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+
+        .info-btn {
+            width: 100%;
+            margin-top:30px;
+            .btton {
+                width: 120px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 8px;
+                background-color: #368bd5;
+                cursor: pointer;
+                text-align: center;
+                color: #fff;
+                margin: auto;
+            }
+        }
+
+        .more {
+            height: 115px;
+            .group-input{
+                height:100px
+            }
+        }
+
+        .infoa {
+            &:before {
+                position: absolute;
+                display: inline-block;
+                line-height: 39px;
+                height: 39px;
+                content: '*';
+                color: #ff0000;
+            }
+        }
+    }
+}

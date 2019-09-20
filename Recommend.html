@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <title>图书推荐功能</title>
+    <link href="iconfont/iconfont.css" rel="stylesheet" />
+    <link href="css/common-stylefix.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/recommend.min.css" />
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+    <script type="text/javascript" src="js/vee-validate.min.js" ></script>
+    <script type="text/javascript" src="js/vue.min.js" ></script>
+    <script type="text/javascript" src="js/zh_CN.js" ></script>
+
+</head>
+<body>
+    <div class="box">
+        <div class="content">
+            <div class="banner">
+                <div class="pic">
+                    <ul>
+                        <li><a href="javascript://"><img src="images/index-banner.jpg" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="enroll" id="recommend-box">
+                <div class="title">请填写您要荐购的书籍信息：</div>
+                <div class="content">
+                    <div class="info infoa">
+                        <div class="group-input">
+                            <span class="a">书&nbsp;名：</span>
+                            <input v-model="title" v-validate="'required'" data-vv-as="书名" type="text" name="title" placeholder="请输入推荐书名" />
+                        </div>
+                        <div class="errors" v-show="errors.has('title')" v-cloak>{{ errors.first('title') }}</div>
+                    </div>
+                    <div class="info infoa">
+                        <div class="group-input">
+                            <span class="a">作&nbsp;者：</span>
+                            <input v-model="author" v-validate="'required'" data-vv-as="作者" type="text" name="author" placeholder="请输入作者" />
+                        </div>
+                        <div class="errors" v-show="errors.has('author')" v-cloak>{{ errors.first('author') }}</div>
+                    </div>
+                    <div class="info infoa">
+                       <div class="group-input">
+                           <span class="a">出版社：</span>
+                            <input v-model="publisher" v-validate="'required'" data-vv-as="出版社" type="text" name="publisher" placeholder="请输入出版社" />
+                        </div>
+                       <div class="errors" v-show="errors.has('publisher')" v-cloak>{{ errors.first('publisher') }}</div>
+                    </div>
+                    <div class="info infob">                  
+                        <div class="group-input">
+                            <span class="a">出版年：</span>
+                            <input v-model="pubYear" v-validate="'required|pubYear|digits:4'" data-vv-as="出版年" type="text" name="pubYear" placeholder="请输入出版年" />
+                        </div>
+                        <div class="errors" v-show="errors.has('pubYear')" v-cloak>{{ errors.first('pubYear') }}</div>
+                    </div>
+                    <div class="info infob">
+                        <div class="group-input">
+                            <span class="a">语言类型：</span>
+                            <input v-model="type" v-validate="'required'" data-vv-as="语言类型" type="text" name="type" placeholder="语言类型" />
+                        </div>
+                        <div class="errors" v-show="errors.has('type')" v-cloak>{{ errors.first('type') }}</div>
+                    </div>
+                    <div class="info infob">
+                        <div class="group-input">
+                            <span class="a">ISBN号：</span>
+                            <input v-model="isbn" v-validate="'required|isbn'" data-vv-as="ISBN号" type="text" name="isbn" placeholder="ISBN号" />
+                        </div>
+                        <div class="errors" v-show="errors.has('isbn')" v-cloak>{{ errors.first('isbn') }}</div>
+                    </div>
+
+                    <div class="info infob more">
+                        <div class="group-input">
+                            <span class="a">推荐理由：</span>
+                            <textarea v-model="remark" v-validate="'max:200'" data-vv-as="推荐理由" type="text" name="remark" placeholder="请输入推荐理由"></textarea>
+                        </div>
+                        <div class="errors" v-show="errors.has('remark')" v-cloak>{{ errors.first('remark') }}</div>
+                    </div>
+                     <div class="info info-btn">
+                         <div class="btton" @click="validateBeforeSubmit()">提交</div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var IndexPage = "http://localhost:62297/weixin/Index.html?Index=0"
+        var AuthCode = "12131";
+        $(function () {
+            recommend(AuthCode);
+        })
+        VeeValidate.Validator.localize('zh_CN');
+        Vue.use(VeeValidate);
+
+        VeeValidate.Validator.localize({
+            zh_CN: {
+                messages: {
+                    required: function (name) { return name + '不能为空' },
+                }
+            }
+        })
+        VeeValidate.Validator.extend('isbn',{
+            getMessage: function () { return " 请输入正确格式的isbn号" },
+            validate: function (value) { return /^[\d-]*$/.test(value);}
+        })
+        VeeValidate.Validator.extend('pubYear', {
+            getMessage: function () { return " 请输入正确的年份" },
+            validate: function (value) { return /^(19|20)\d{2}$/.test(value); }
+        })
+
+        function recommend(AuthCode) {
+            var classList = new Vue({
+                el: '#recommend-box',
+                data: function () {
+                    return {
+                        title: "",
+                        author: "",
+                        publisher: "",
+                        pubYear: "",
+                        type: "",
+                        remark: "",
+                        isbn: ""
+
+                    }
+                },
+                methods: {
+                    validateBeforeSubmit() {
+                        this.$validator.validateAll().then((result) => {
+                            if (result) {
+                                $.ajax({
+                                    url: '/WeChat/Handler.ashx',
+                                    data: {
+                                        Request: "Recommend",
+                                        title: this.title,
+                                        author: this.author,
+                                        publisher: this.publisher,
+                                        pubYear: this.pubYear,
+                                        type: this.type,
+                                        remark: this.remark,
+                                        isbn: this.isbn,
+                                        certId: AuthCode
+                                    },
+                                    type: 'POST',
+                                    dataType: "json",
+                                    success: function (data) {
+                                        var msg = data.msg;
+                                        alert(msg);
+                                        window.location.href = IndexPage;
+                                    }
+                                });
+                                return;
+                            }
+                            alert("请输入完整推荐信息！")
+                        });
+                    }
+                }
+            })
+        }
+    </script>
+</body >
+</html >

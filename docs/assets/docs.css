@@ -1,0 +1,61 @@
+@import 'iconfont/iconfont.css';
+
+.gt-container .gt-btn{
+    background-color: #9B30FF;
+}
+.gt-container .gt-header-controls-tip,.gt-container a:hover,.gt-container a,.gt-container .gt-comment-username{
+    color: #9B30FF;
+}
+.gt-container .gt-svg svg{
+    fill: #9B30FF;
+}
+.gt-container .gt-link{
+    border-bottom: #9B30FF;
+}
+.gt-container .gt-popup .gt-action.is--active:before{
+    background-color: #9B30FF;
+}
+
+.sidebar .sidebar-nav li{
+    position: relative;
+}
+.sidebar .sidebar-nav li span{
+    display: inline-block;
+    color: #9B30FF;
+    position: absolute;
+    top:-2px;
+    left: -24px;
+    padding: 0;
+    font-size: 18px;
+    vertical-align: top;
+}
+
+.sidebar .sidebar-nav li span::before,.iconS::before{
+    font-family:"iconfont" !important;
+    font-size:20px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e612";
+    font-weight: normal;
+}
+
+.sidebar .sidebar-nav li span.new{
+    left: inherit;
+    right: 0;
+    top:0;
+}
+.sidebar .sidebar-nav li span.new::before{
+    content: "\e673";
+    font-size: 32px;
+}
+
+.iconS::before{
+    display: inline-block;
+    content: "\e70a";
+    font-size: 30px;
+    color: #9B30FF;
+}
+.sidebar ul li a .iconS::before{
+    font-size: 14px;
+}

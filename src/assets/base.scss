@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/*****************************reset************************************/
+/*消除默认margin padding*/
+body, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0;padding: 0;border: none;
+}
+a, button, input ,i,li{
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+/*重置iphone 旋转字体大小 */
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  font-family:"微软雅黑";
+}
+body,html{overflow-x:hidden;}
+
+/*字体*/
+body {
+  margin:0;
+  font-size: 62.5%;
+//"STHeiti", "Microsoft Yahei", "SimSun", "SimHei", "Tahoma", "Arial", "sans-serif";
+}
+
+/*表单字体*/
+input, button, select, textarea {
+  font: 14px "STHeiti", "Microsoft Yahei", "SimSun", "SimHei", "Tahoma", "Arial", "sans-serif";
+}
+
+input, button, select, textarea, fieldset, img {
+  -webkit-appearance: none;
+  outline: none;
+  background: none;
+}
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+/*主体字体大小和颜色 页面背景色*/
+body {
+  background-color: #F3F4F5;
+  font-size: 14px;
+  color: #282828;
+}
+
+/*链接*/
+a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+/*清除safari 按钮默认样式*/
+label,input[type="submit"], input[type="reset"], input[type="button"], input[type="number"],button {
+  -webkit-appearance: none;
+}
+
+
+
+/*设置disabled input样式*/
+input[disabled] {
+  background-color: #fff;
+}
+
+/*textarea 设为只能垂直拖动*/
+textarea {
+  resize: vertical;
+}
+
+/*label 默认引导可点击*/
+label {
+  cursor: pointer;
+}
+
+/*清除图片外边框问题*/
+img {
+  vertical-align: top;
+}
+
+/*图片最大宽度不能超过父标签*/
+img {
+  max-width: 100%;
+}
+
+/*默认输入框中字体颜色*/
+input::-webkit-input-placeholder {
+  color:#ccc !important;
+}
+/*******************************通用类**********************************/
+/*浮动*/
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/*bfc*/
+.bfc {
+  display: table-cell;
+  width: 9999px;
+}
+
+.uppercase {
+  text-transform: uppercase
+}
+
+.lowercase {
+  text-transform: lowercase
+}
+
+.capitalize {
+  text-transform: capitalize
+}
+
+/*可实现补足自适应，与浮动元素配合可实现多栏伸缩布局*/
+
+/*盒模型*/
+.border-box {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.display-inhert {
+  display: inherit;
+}
+
+/*修改mintui样式*/
+.toastStyle .mint-toast-text{
+  font-size: 28px !important;
+}

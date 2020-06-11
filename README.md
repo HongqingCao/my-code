@@ -10,11 +10,14 @@
 ## 简介 
 
 这里记录了我的一些日常代码库，一些编程小技巧，包含Html/css/Vue/React/Node/Js技术栈/小程序/微信开发的代码  
-ps:每个文件夹对应一个项目技巧 ，下面列表可以点击标题进入 ,可以切换分支（Branch）按需下载对应代码
+
+## ps
+* 每个文件夹对应一个项目技巧 ，下面列表可以点击标题进入   
+* 切换分支（Branch）按需下载对应代码  
 
 ## 最新动态  
 
-- [2018-12-23] [《CSS变量在前端复杂布局和交互上的探索》](https://github.com/HongqingCao/my-code/tree/dry-switching-with-css)   
+- [2020-06-11] [微信国庆头像生成工具(迁移)](https://github.com/HongqingCao/my-code/tree/national-day-head)   
 
 
 
@@ -31,7 +34,7 @@ ps:每个文件夹对应一个项目技巧 ，下面列表可以点击标题进�
 - :book: [2、vueslidershow( 自己封装一个vue的响应式自适应轮播图组件 )](https://github.com/HongqingCao/my-code/tree/VueSliderShow)  
 - :book: [3、阿里达摩院头部导航](https://github.com/HongqingCao/my-code/tree/damopotal)  
 - :book: [4、Vue响应式原理-从Object.defineProperty到proxy实现观察者机制的探索](https://juejin.im/post/5d7201cdf265da03d7283e1d)  
- 
+- :book: [5、开发微信一键制作“国庆头像”小工具，比你@微信官方靠谱多了【基于 Vue2.6x 构建】](https://juejin.im/post/5d8dbc28f265da5bac300c00)  
   
 ## React  
 

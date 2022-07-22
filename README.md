@@ -1,3 +1,4 @@
+
 <h1 align="center">
 	<br>
 	  my-code
@@ -17,7 +18,7 @@
 
 ## 最新动态  
 
-- [2020-06-11] [微信国庆头像生成工具(迁移)](https://github.com/HongqingCao/my-code/tree/national-day-head)   
+- [2022-07-22] [拉开帷幕效果](https://github.com/HongqingCao/my-code/tree/curtains-effect)   
 
 
 
@@ -27,6 +28,7 @@
 - :book: [2、从青铜到王者10个css3伪类使用技巧和运用](https://github.com/HongqingCao/my-code/tree/Pseudo-classes)  
 - :book: [3、使用CSS自定义属性构建骨架屏](https://github.com/HongqingCao/my-code/tree/skeleton-demo)  
 - :book: [4、CSS变量，在前端复杂布局和交互上的探索](https://github.com/HongqingCao/my-code/tree/dry-switching-with-css)  
+- :book: [5、拉开帷幕效果](https://github.com/HongqingCao/my-code/tree/curtains-effect)  
 
 ## Vue  
 

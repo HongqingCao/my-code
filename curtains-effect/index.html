@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+  <html>
+	<head>
+	  <meta charset="utf-8" />
+	  <title></title>
+	</head>
+	<body>
+	  <div class="title">网站标题</div>
+	  <div class="curtain">
+	<div class="invert">
+	  <h2>用CSS 写一个‘拉起帷幕’ 效果</h2>
+	</div>
+	  </div>
+	</body>
+  </html>
+
+<style>
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --minh: 100vh;
+  --color1: wheat;
+  --color2: midnightblue;
+}
+
+html {
+  font-size: 60px;
+}
+.title {
+  height: 100px;
+  line-height: 100px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.curtain {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color2) 50%,
+    var(--color1) 50%
+  );
+}
+
+.curtain::after {
+  content: '';
+  display: block;
+  min-height: var(--minh);
+}
+
+.invert {
+  position: sticky;
+  top: 0px;
+
+  mix-blend-mode: difference;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: var(--minh);
+}
+
+h2 {
+  color: var(--color1);
+}
+</style>

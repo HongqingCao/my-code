@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>人物上下动画</title>
+  <style>
+  	body{
+  		padding: 0;
+  		margin: 0;
+  		border: 0;
+  	    width: 100%;	
+  		height: 100%;
+  	}
+    .image-container {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background: url(img/icon-home-news.png) 100% 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;	
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: move-up-down 3s infinite ease-in-out;
+    }
+
+    @keyframes move-up-down {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="img/wukong.png" alt="人物图片">
+  </div>
+</body>
+</html>	
